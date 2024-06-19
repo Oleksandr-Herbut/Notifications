@@ -3,3 +3,77 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 230px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+
+.header {
+  font-size: 14px;
+  margin: 8px;
+}
+
+form > input {
+  max-width: 210px;
+  margin: 6px;
+  border: 1px solid black;
+  border-radius: 5px;
+  height: 23px;
+}
+
+form > button {
+  max-width: 300px;
+  height: 20px;
+  margin: 6px;
+  border-radius: 5px;
+  color: white;
+  border: none;
+  background-color: rgb(76, 178, 247);
+}
+
+.buttons button {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  max-width: 230px;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: rgb(76, 178, 247);
+  color: white;
+  cursor: pointer;
+}
+
+.notifications-container {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  width: 300px;
+}
+
+.notification {
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 5px;
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.notification.success {
+  background-color: #4caf50;
+}
+.notification.warning {
+  background-color: #ff9800;
+}
+.notification.error {
+  background-color: #f44336;
+}
+.notification.info {
+  background-color: #2196f3;
+}
