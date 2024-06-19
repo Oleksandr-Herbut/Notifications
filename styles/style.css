@@ -25,6 +25,7 @@ form > input {
   border: 1px solid black;
   border-radius: 5px;
   height: 23px;
+  text-indent: 6px;
 }
 
 form > button {
