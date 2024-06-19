@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Order Notifications</title>
     <link rel="stylesheet" href="styles/style.css" />
     <link
       rel="stylesheet"
@@ -11,14 +11,14 @@
     />
   </head>
   <body>
-    <form>
+    <form id="orderForm">
       <p class="header">Создание заказа</p>
-      <input type="text" placeholder=" Адрес" />
-      <input type="text" placeholder=" Цена" />
-      <input type="text" placeholder=" Получатель" />
+      <input type="text" placeholder="  Адрес" />
+      <input type="text" placeholder="  Цена" />
+      <input type="text" placeholder="  Получатель" />
       <button type="submit">Создать</button>
     </form>
-    <div class="buttons">
+    <div class="buttons" style="display: none">
       <button id="paid">Заказ оплачен</button>
       <button id="received">Заказ отправлен</button>
       <button id="sent">Заказ получен</button>
